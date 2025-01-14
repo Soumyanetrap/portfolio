@@ -92,7 +92,6 @@ const ProfileForm = () => {
         return [...Array(5)].map((_, index) => {
             
             const starClass = index < currentRating ? 'star golden' : 'star';
-            console.log(type, index)
             return (
                 <span
                     key={index}
