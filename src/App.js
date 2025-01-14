@@ -6,7 +6,7 @@ import Footer from './component/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
     <div className="App">
       <div className="App-header">
         <Header/>
