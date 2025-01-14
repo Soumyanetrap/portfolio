@@ -1,0 +1,76 @@
+/* Keep the existing styles */
+h1 {
+    margin: 0;
+}
+
+nav {
+    color: white;
+}
+
+nav ul {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 3px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav ul li {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav ul li span {
+    width: 100%;
+    text-decoration: none; /* Remove underline */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li.selected {
+    background-color: white;
+}
+
+nav ul li.selected span {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    position: absolute; /* Position it absolutely */
+    left: 10px; /* Adjust the distance from the left side */
+    top: 20px; /* Adjust the vertical position */
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 1000px) {
+    nav ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333; /* Adjust background color as needed */
+        padding: 0;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .hamburger {
+        display: block; /* Display the hamburger icon */
+    }
+}

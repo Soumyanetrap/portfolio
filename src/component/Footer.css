@@ -1,0 +1,24 @@
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #9a9a9a;
+}

@@ -1,0 +1,175 @@
+/* testimonials.css */
+
+.testimonials-container {
+    padding: 0px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Heading styling */
+.testimonials-container h2 {
+    font-size: 2.0rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* List of testimonials - Display as a grid for better layout */
+.testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically adjusts the number of columns */
+    gap: 30px; /* Space between cards */
+    padding: 10px 20px;
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+    background-color: #f8f8f8;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonial Header */
+.testimonial-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.testimonial-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.testimonial-info p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+/* Message content */
+.testimonial-message {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-social-media{
+    margin: 0;
+}
+/* Social media links */
+.social-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #0073b1;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #005582;
+}
+
+.social-icon:nth-child(2) {
+    color: #1da1f2;
+}
+
+.social-icon:nth-child(2):hover {
+    color: #0d95e8;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    /* On mobile, use a single column layout */
+    .testimonials-list {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+@media (min-width: 769px) {
+    /* On larger screens, use a grid with multiple columns */
+    .testimonials-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically adjusts */
+    }
+}
+
+.rating-table {
+    width: 100%;
+    border-collapse: collapse;  /* Remove space between table borders */
+    margin-top: 20px;           /* Space from the heading */
+  }
+  
+  .rating-table th, .rating-table td {
+    padding: 10px;             /* Add padding inside the cells */
+  }
+  
+  .rating-table td {
+    text-align: left;  
+  }
+
+  .rating-table td:nth-child(1) {
+    padding-left: 20px;
+  }
+  
+  .rating-table td:nth-child(2) {
+    display: flex;             /* Use flexbox to center content */
+    justify-content: center;   /* Center the stars in the cell */
+    align-items: center;       /* Vertically align the stars */
+  }
+
+  .rating-table th {
+    background-color: #f4f4f4; /* Light grey background for header */
+    font-weight: bold;         /* Make header text bold */
+  }
+  
+  .rating-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for table rows */
+  }  
+  
+  .stars {
+    display: flex;
+    gap: 5px; /* Space between stars */
+  }
+  
+  .full, .half, .empty {
+    font-size: 20px; /* Size of the stars */
+  }
+  
+
+.stars {
+    font-size: 24px; /* Adjust size of the stars */
+    margin: 0;
+    margin-left: 20px;;
+}
+
+.stars .full {
+    color: #FFD700; /* Gold color for full stars */
+}
+
+.stars .half {
+    color: #FFD700; /* Gold color for half stars */
+}
+
+.stars .empty {
+    color: #e0e0e0; /* Light grey color for empty stars */
+}

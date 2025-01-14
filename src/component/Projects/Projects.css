@@ -1,0 +1,92 @@
+.projects-container {
+    padding: 20px;
+}
+
+.projects-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #666;
+    flex-grow: 1;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.project-link {
+    color: #3c3c3c;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.project-link:hover {
+    color: #000;
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem; /* Smaller font size */
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+    width: 100%; /* Ensure it doesn't sit on the same line */
+}

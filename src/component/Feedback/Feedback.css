@@ -1,0 +1,140 @@
+/* Container for the form */
+.form-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    min-height: calc(100vh - 100px); /* Full viewport height minus the height of header/footer */
+    padding-top: 0;           /* Remove any padding on top */
+    padding-bottom: 0;        /* Remove any padding at the bottom */
+}
+
+/* General styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the form fields */
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Styling for text inputs and text areas */
+input[type="text"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* LinkedIn and Twitter styling: layout for larger screens */
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-media input {
+    flex: 1; /* Make inputs take equal space */
+}
+
+/* Rating styling: layout for larger screens */
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Star ratings styles */
+.star {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star.golden {
+    color: gold;
+}
+
+/* Hover effect for stars: highlights the star and all previous stars based on hover index */
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+/* Active star effect when clicked */
+.star.active,
+.star.golden {
+    color: gold;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Align the submit button */
+button[type="submit"] {
+    align-self: center;
+}
+
+/* Media Queries */
+
+/* For larger screens, LinkedIn, Twitter, and Ratings should be on the same row */
+@media screen and (min-width: 768px) {
+    /* Ensure the social media fields (LinkedIn, Twitter) are on the same row */
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media input {
+        flex: 1;
+    }
+
+    /* Ensure Ratings are also in the same row */
+    .ratings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* For smaller screens, everything should stay in the original stacked layout */
+@media screen and (max-width: 767px) {
+    /* Social media and ratings will stack on smaller screens */
+    .social-media,
+    .ratings {
+        display: block;
+    }
+    
+    .social-media input {
+        width: 100%; /* Make inputs full width on small screens */
+        margin-bottom: 10px; /* Space between the two inputs */
+    }
+}

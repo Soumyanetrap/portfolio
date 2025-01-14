@@ -1,0 +1,13 @@
+/* Style for tags if you choose to use them */
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 15px;
+    margin-right: 5px;
+}
