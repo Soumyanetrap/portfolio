@@ -1,30 +1,27 @@
 import React from 'react'
-
 const timelineConfig = {
 
-    greeting:
-        <h1 className="heading">
-            Hi! I'm <strong className="main-name"> Soumyanetra Pal</strong>
-        </h1>,
+    greeting: <h3>Hi! I'm  Soumyanetra Pal</h3>,
     titles: [
-        "A Data Scientist",
+        "A Data Scientist", 
         "A Machine Learning Specialist",
         "A Backend Developer",
         "An Indian"
     ],
     about: {
-        start: "I've been working for over nine years on data science projects. " +
-            "I'm excited by learning new things, contributing to the data science community," +
-            " and spreading the word of data!",
-        exit: "I'm fluent at Python, SQL databases, and more, " +
-            "with a deep interest in machine learning."
+        start: `As a data scientist with six months of experience since graduation as an AI Engineer, 
+        I am passionate about leveraging data to solve real-world problems.
+        I am continuously expanding my skills and knowledge in the field, and
+        I’m committed to delivering high-quality, data-driven solutions.`,
+        exit: "I'm fluent at Python, SQL databases, and more, with a deep interest in machine learning.",
+        image: "https://media.licdn.com/dms/image/v2/C4D03AQHr3L_nZC6NnQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1652233183239?e=1742428800&v=beta&t=75VBNVAiQFVj6SnsBmLFlpIgU68bsnxV88yAGBpAzLE"
     },
     workTimeline: [
         {
             id: "work-6",
             title: "Data Scientist",
             company: "Netradyne Technology India Pvt Ltd",
-            description: "Worked on IMU Data Analysis and Machine Learning. Worked on Filter Designing for better feature extraction.",
+            description: "Working on IMU Data Analysis and Machine Learning. Worked on Filter Designing for better feature extraction.",
             date: "2024-Present",
             tags: ["Data Science", "Signal Processing"]
         },

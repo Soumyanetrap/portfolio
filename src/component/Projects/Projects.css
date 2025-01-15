@@ -34,6 +34,7 @@
 }
 
 .project-content {
+    margin: 0px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -62,12 +63,14 @@
     display: flex;
     gap: 10px;
     justify-content: center;
+    margin: 0px;
 }
 
 .project-link {
     color: #3c3c3c;
     text-decoration: none;
     font-size: 1.2em;
+    
 }
 
 .project-link:hover {

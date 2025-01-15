@@ -1,4 +1,75 @@
 /* Basic styling for the overall timeline */
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;  /* Adjust the size of the profile picture */
+    height: 100px; /* Adjust the size of the profile picture */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+.about {
+    background-color: #f4f4f4; /* Light gray background, consistent with the timeline content */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners for a smooth look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Spacing below the about section */
+    width: 95%; /* Make sure it takes up full width */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align text to the left */
+    margin: 10px;
+}
+
+.about span {
+    font-size: 16px; /* Adjust font size for readability */
+    color: #333; /* Darker text color for readability */
+    margin: 5px 0; /* Add vertical spacing between items */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Align items horizontally */
+}
+
+.about span h3{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.about section {
+    margin-top: 15px; /* Add space above titles */
+    display: flex;
+}
+
+.about section span {
+    font-size: 18px; /* Slightly larger font size for titles */
+    color: #444; /* Slightly lighter text color for titles */
+    margin-right: 10px; /* Space between titles */
+    font-weight: bold; /* Make titles bold for emphasis */
+}
+
+.about section span:last-child {
+    margin-right: 0; /* Remove right margin for the last title */
+}
+
+/* Adjust for mobile view (screens smaller than 768px) */
+@media (max-width: 768px) {
+    .about {
+        padding: 15px; /* Reduce padding for smaller screens */
+        width: 85%;
+    }
+
+    .about span {
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+
+    .about section {
+        margin-top: 10px; /* Reduce top margin for smaller screens */
+    }
+
+    .about section span {
+        font-size: 16px; /* Adjust title font size for mobile */
+        margin-right: 5px; /* Reduce space between titles */
+    }
+}
+
 .timeline {
     position: relative;
     max-width: 800px; /* Adjust width as needed */

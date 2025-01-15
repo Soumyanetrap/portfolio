@@ -29,7 +29,7 @@ const projectConfig = {
                 icon: <AiOutlineGlobal />,
             }
         ],
-        image: "https://files.oaiusercontent.com/file-3orprjvhRccrN6k57apzWJ?se=2025-01-07T14%3A45%3A30Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D22b0e2be-853e-4acc-9d74-c2017c8059bb.webp&sig=c6Q03Izy4UmKfzmy1L1a5MNQ9MrP49CTJEZP%2BUJiaqo%3D",
+        image: "/assets/images/website doodle.png",
         description: "A Website to track all your Travels and Expenses and many more. Get insights on your spending habits.",
         }],
     ai: [

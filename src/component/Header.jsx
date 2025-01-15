@@ -50,7 +50,7 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Soumyanetra</h1>
+            <h1>Portfolio</h1>
             {
                 window.innerWidth <= 768 && <MenuIcon className="hamburger" onClick={toggleMenu} />
             }
