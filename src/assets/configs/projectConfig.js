@@ -17,8 +17,13 @@ const projectConfig = {
             }
         ],
         image: "https://static.vecteezy.com/system/resources/previews/020/239/586/non_2x/hand-drawn-freelance-woman-working-on-laptop-under-coconut-tree-illustration-in-doodle-style-vector.jpg",
-        description: "I am in-front of you",
-    },
+            description: "I am in-front of you",
+        full_desc: {
+            intro: `This is my portfolio highlighting my skills and few important projects.`,
+            details: `Let's connect and build something awesome and impactful together.`
+        },
+        tags: ["React", "NoSQL", "Google Firebase", "Web Development"]
+    },  
     {
         id: "project-5",
         title: "All-in-1",
@@ -29,8 +34,16 @@ const projectConfig = {
                 icon: <AiOutlineGlobal />,
             }
         ],
-        image: "/assets/images/website doodle.png",
+        image: "https://st4.depositphotos.com/7341970/20675/v/450/depositphotos_206751488-stock-illustration-travel-adventure-tourism-tag-cloud.jpg",
         description: "A Website to track all your Travels and Expenses and many more. Get insights on your spending habits.",
+        full_desc: {
+            intro: `Tracking and Managing expenses is a tedious task. More so when you have to track different things on different platforms.`,
+            details: `Here is a website which allows you to track all your expenses and travels in one place.
+            Here, you can list all your travels and their expenses. Besides this, it allows you to keep a track of all the documents(tickets and bills).
+            The website also provides insights on your spending habits which might help you to manage your expenses better.
+            It also allows you to connect with people and plan vacations together.`
+        },
+        tags: ["React", "Node JS", "Statistics", "Full Stack", "Web Development", "RDBMS","PostgreSQL"]
         }],
     ai: [
     {
@@ -50,6 +63,13 @@ const projectConfig = {
         ],
         image: "https://media.istockphoto.com/id/1405708483/vector/man-with-document.jpg?s=612x612&w=0&k=20&c=gYMZ2RRTj2vCJ56iroKK_rrpGZMoKRGn8Xjr15pJu54=",
         description: "Developed a model to simplify legal documents using LLMs.",
+        full_desc: {
+            intro: `Document Simplification is crucial for niche domains like Legal and Medical fields.`,
+            details: `Developed a model to Simplify Large Legal Documents using LLMs.
+            The model was trained to understand and simplify the document by keeping all relevant information intact. 
+            This would help people unrelated to the field to understand the document easily.`
+        },
+        tags: ["DL", "NLP", "LLMs"]
     },
     {
         id: "project-2",
@@ -68,7 +88,12 @@ const projectConfig = {
         ],
         image: "https://speechzella.com/wp-content/uploads/2022/09/language-vs.-speech-1024x1024.png",
         description: "Developed a robust model to understand Spoken Language using Teacher-Student Approach.",
-        full_desc: ""
+        full_desc: {
+            intro: `Spoken Language Based Chat-Bots is the new need of the hour.`,
+            details: `Developed a model to understand Spoken Language using Teacher-Student Approach.
+            The model was trained to clearly understand the semantic relation in Spoken Speech and respond accordingly. Besides this, it is capable to rightly understand different styled pronunciations and pace differences.`
+        },
+        tags: ["DL", "Spoken Language Understanding", "NLP", "Knowledge Distillation"]
     },
     {
         id: "project-1",

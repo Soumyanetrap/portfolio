@@ -84,8 +84,8 @@ textarea {
     color: gold;
 }
 
-/* Button styling */
-button {
+/* .submit-button styling */
+.submit-button {
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -95,12 +95,12 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.submit-button:hover {
     background-color: #45a049;
 }
 
-/* Align the submit button */
-button[type="submit"] {
+/* Align the submit .submit-button */
+.submit-button[type="submit"] {
     align-self: center;
 }
 
